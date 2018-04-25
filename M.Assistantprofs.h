@@ -1,32 +1,33 @@
 //M.Assistantprofs.h
 #include <iostream>
+#include "MLecturers.h"
 using namespace std;
-class gender
+class Assistantprofs
 {
   public:
-void MLecturers()
+void MAssistantprofs()
 {
+  cout<<"Is your teacher Assistantprof?"<<endl;
+  cin>>this->ans;
+  if(this->ans == "Yes" || this->ans == "yes")
+ {  
   cout<<"Is your teacher depertment's x-chairperson?"<<endl;
-  cin>>ans;
-  if(ans == "Yes" || ans == "yes")
+  cin>>this->ans;
+  if(this->ans == "Yes" || this->ans == "yes")
   {
     cout<<"Your teacher is MR BADAR SAMI"<<endl;
+    goto end;
   }
-  else if (ans == "no" || ans == "No")
-  {
-    cout<<"Is your teacher phd?"<<endl;
-    cin>>ans;
-    if (ans == "no" || ans == "No")
-    {
-      cout<<"Your teacher is MR SYED JAMAL HUSSAIN"<<endl;
-    }
-    else
-    {
+  cout<<"Is your teacher phd?"<<endl;
+  cin>>this->ans;
+   if (this->ans == "Yes" || this->ans == "yes")
+  {  
       cout<<"Is your teacher x-student advisor?"<<endl;
       cin>>ans;
       if (ans == "Yes" || ans == "yes")
       {
         cout<<"Your teacher is MR FARHAN AHMED SIDQUI"<<endl;
+        goto end;
       }
 
       cout<<"Is your teacher teaches Artifical Intellegence course?"<<endl;
@@ -34,6 +35,7 @@ void MLecturers()
        if (ans == "Yes" || ans == "yes")
       {
         cout<<"Your teacher is DR NADEEM MEHMOOD"<<endl;
+        goto end;
       }
 
       cout<<"Is your teacher teaches Networking?"<<endl;
@@ -41,6 +43,7 @@ void MLecturers()
        if (ans == "Yes" || ans == "yes")
       {
         cout<<"Your teacher is DR MUHAMMAD SAEED"<<endl;
+        goto end;
       }
 
       cout<<"Is your teacher teaches Software project management?"<<endl;
@@ -48,6 +51,7 @@ void MLecturers()
        if (ans == "Yes" || ans == "yes")
       {
         cout<<"Your teacher is MR HUSSAIN SALEEM"<<endl;
+        goto end;
       }
 
       cout<<"Is your teacher teaches database management system?"<<endl;
@@ -55,6 +59,7 @@ void MLecturers()
        if (ans == "Yes" || ans == "yes")
       {
         cout<<"Your teacher is MR S. M. KHALID JAMAL"<<endl;
+        goto end;
       }
 
       cout<<"Is your teacher teaches related to data mining?"<<endl;
@@ -62,23 +67,32 @@ void MLecturers()
        if (ans == "Yes" || ans == "yes")
       {
         cout<<"Your teacher is DR TAHSEEN AHMED JILANI"<<endl;
+        goto end;
       }
       else
       {
         cout<<"Your teacher is DR SYED ASIM ALI"<<endl;
+        goto end;
       }
 
     }
+    else
+    {
+      cout<<"Your teacher is MR SYED JAMAL HUSSAIN"<<endl;
+      goto end;
+    }
   }
-
-
   else
   {
-        //NEXT CLASS
-  }
-  
+    //next class
+    teacher.MLecturers();
+  };
+  end:;
 }
 
+  
  private:
  string ans;
+ Lecturers teacher;
+ 
 };

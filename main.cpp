@@ -1,7 +1,15 @@
 #include <iostream>
 using namespace std;
+#include "Gender.h"
 int main()
 {
-  cout<<"hello";
+ gender a;
+ string ans = "yes";
+ while(ans == "yes" )
+ {
+ a.male();
+ cout<<"Wanna continue??"<<endl; 
+ cin>>ans;
+ };
   system("pause");
 }

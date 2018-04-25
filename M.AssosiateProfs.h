@@ -1,9 +1,12 @@
 //M.AssosiateProfs.h
 #include <iostream>
 using namespace std;
-class gender
+#include "M.Assistantprofs.h"
+
+class AssosiateProfs
 {
-  public:
+public:
+
 void MAssosiateProf()
 {
   cout<<"Is your teacher Assosiate Professor?"<<endl;
@@ -25,8 +28,10 @@ void MAssosiateProf()
   else 
   {
 //NEXT CLASS
+teacher.MAssistantprofs();
   }
 }
  private:
  string ans;
+ Assistantprofs teacher;
 };

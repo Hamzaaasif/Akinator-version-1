@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include "M.AssosiateProfs.h"
 class gender
 {
   public:
@@ -9,6 +10,7 @@ void male()
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
+    teacher.MAssosiateProf();
   }
   else 
   {
@@ -17,4 +19,5 @@ void male()
 }
  private:
  string ans;
+ AssosiateProfs teacher;
 };
