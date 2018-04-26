@@ -1,22 +1,23 @@
-//Faculty.h
 #include <iostream>
 using namespace std;
-class gender
+#include "Gender.h"
+class faculty
 {
   public:
-void MFaculty()
+void Faculty()
 {
   cout<<"Does your teacher permenent?"<<endl;
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-    //assosiate class
+    teacher.permenentmale();
   }
   else 
   {
-//visiting  CLASS
+   cout<<"Under construction xD"<<endl;
   }
 }
  private:
  string ans;
+ gender teacher;
 };
