@@ -1,7 +1,7 @@
 //M.AssosiateProfs.h
 #include <iostream>
 using namespace std;
-#include "M.Assistantprofs.h"
+#include "Assistantprofs.h"
 
 class AssosiateProfs
 {
@@ -9,7 +9,7 @@ public:
 
 void MAssosiateProf()
 {
-  cout<<"Is your teacher Assosiate Professor?"<<endl;
+  cout<<"Does your teacher Assosiate Professor?"<<endl;
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {

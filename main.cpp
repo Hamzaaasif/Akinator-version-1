@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
-#include "Gender.h"
+#include "Faculty.h"
 int main()
 {
- gender a;
+ faculty a;
  string ans = "yes";
  while(ans == "yes" )
  {
- a.male();
- cout<<"Wanna continue??"<<endl; 
+ a.Faculty();
+ cout<<endl<<"Wanna continue??"<<endl; 
  cin>>ans;
+ system("cls");
  };
   system("pause");
 }

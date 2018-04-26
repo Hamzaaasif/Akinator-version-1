@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
-#include "M.AssosiateProfs.h"
+#include "AssosiateProfs.h"
+
 class gender
 {
   public:
-void male()
+void permenentmale()
 {
-  cout<<"Is your teacher male?"<<endl;
+  cout<<"Does your teacher male?"<<endl;
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
@@ -14,10 +15,25 @@ void male()
   }
   else 
   {
-//female CLASS
+    Fteacher.FAssistantprofs();
+  }
+}
+
+void visitingmale()
+{
+  cout<<"Does your teacher male?"<<endl;
+  cin>>ans;
+  if(ans == "Yes" || ans == "yes")
+  {
+    cout<<"under construction xD";
+  }
+  else 
+  {
+    cout<<"under construction xD";
   }
 }
  private:
  string ans;
  AssosiateProfs teacher;
+ Assistantprofs Fteacher;
 };

@@ -24,8 +24,31 @@ void MFullTimeCooperative()
   {
     cout<<"Your teacher is MR S. MEESAM ALI ZAIDI"<<endl;
   }
-
   end:;
+}
+
+void FFullTimeCooperative()
+{
+   cout << "Does your teacher recently recieve gold medal from PAF KIET?" << endl;				
+	 cin >> ans;
+					if (ans == "yes" || ans == "Yes")
+					{
+						cout << "Your teacher is YUSRA MANSOOR"<<endl;
+            goto end;
+					}
+    cout << "Does your teacher teaches assembly language course?" << endl;
+	  cin >> ans;
+		if (ans == "yes")
+		{
+			cout << "Your teacher is MS UROOJ WAHEED"<<endl;
+      goto end;
+		}
+    else
+    {
+      cout << "Your teacher is MS AEMON ABDUL RAZZQUE"<<endl;
+      goto end;
+    }
+    end:;      
 }
  private:
  string ans;

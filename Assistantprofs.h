@@ -1,17 +1,17 @@
 //M.Assistantprofs.h
 #include <iostream>
-#include "MLecturers.h"
+#include "Lecturers.h"
 using namespace std;
 class Assistantprofs
 {
   public:
 void MAssistantprofs()
 {
-  cout<<"Is your teacher Assistantprof?"<<endl;
+  cout<<"Does your teacher Assistantprof?"<<endl;
   cin>>this->ans;
   if(this->ans == "Yes" || this->ans == "yes")
  {  
-  cout<<"Is your teacher depertment's x-chairperson?"<<endl;
+  cout<<"Does your teacher depertment's x-chairperson?"<<endl;
   cin>>this->ans;
   if(this->ans == "Yes" || this->ans == "yes")
   {
@@ -30,7 +30,7 @@ void MAssistantprofs()
         goto end;
       }
 
-      cout<<"Is your teacher teaches Artifical Intellegence course?"<<endl;
+      cout<<"Does your teacher teaches Artifical Intellegence course?"<<endl;
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
@@ -38,7 +38,7 @@ void MAssistantprofs()
         goto end;
       }
 
-      cout<<"Is your teacher teaches Networking?"<<endl;
+      cout<<"Does your teacher teaches Networking?"<<endl;
       cin>>ans;
        if (ans == "Yes" || ans == "yes")
       {
@@ -90,6 +90,19 @@ void MAssistantprofs()
   end:;
 }
 
+void FAssistantprofs()
+{
+  cout<<"Is your teacher Assistant professor?"<<endl;
+  cin>>this->ans;
+  if(this->ans == "Yes" || this->ans == "yes")
+ {
+   cout<<"Your teacher is DR HUMERA TARIQ"<<endl;
+ }
+ else 
+  {
+  teacher.FLecturers();
+  }
+}
   
  private:
  string ans;
