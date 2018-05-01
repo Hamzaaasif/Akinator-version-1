@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "AssosiateProfs.h"
+#include "Visitingfaculty.h"
 
 class gender
 {
@@ -25,15 +26,16 @@ void visitingmale()
   cin>>ans;
   if(ans == "Yes" || ans == "yes")
   {
-    cout<<"under construction xD";
+    faculty.MVisitingfaculty();
   }
   else 
   {
-    cout<<"under construction xD";
+    faculty.FVisitingfaculty();
   }
 }
  private:
  string ans;
  AssosiateProfs teacher;
  Assistantprofs Fteacher;
+ VISITINGFACULTY faculty;
 };

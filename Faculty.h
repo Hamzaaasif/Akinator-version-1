@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "Gender.h"
+
 class faculty
 {
   public:
@@ -14,10 +15,11 @@ void Faculty()
   }
   else 
   {
-   cout<<"Under construction xD"<<endl;
+   teacher.visitingmale();
   }
 }
  private:
  string ans;
  gender teacher;
+ 
 };
